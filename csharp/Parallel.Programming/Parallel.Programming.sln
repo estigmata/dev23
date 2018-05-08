@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelProgramming", "Parallel.Programming\ParallelProgramming.csproj", "{658C1A0F-4093-455C-A389-0DF27B86E49F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallelProgramming.Tests", "ParallelProgramming.Tests\ParallelProgramming.Tests.csproj", "{5A4C7E76-781F-4673-85F5-F51E1A8D4C20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{658C1A0F-4093-455C-A389-0DF27B86E49F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{658C1A0F-4093-455C-A389-0DF27B86E49F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{658C1A0F-4093-455C-A389-0DF27B86E49F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{658C1A0F-4093-455C-A389-0DF27B86E49F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A4C7E76-781F-4673-85F5-F51E1A8D4C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A4C7E76-781F-4673-85F5-F51E1A8D4C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A4C7E76-781F-4673-85F5-F51E1A8D4C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A4C7E76-781F-4673-85F5-F51E1A8D4C20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

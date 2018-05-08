@@ -1,0 +1,14 @@
+C# Attributes Practice
+----------------------
+
+1. Create a custom attribute that can be applied only to fields.
+	a. It must contain a constructor receiving a string as input parameter.
+	b. It must contain a public property.
+	c. It must contain a public method that retrieves a concatenation of the parameter value received in the constructor + the value of the public property.
+
+2. Create a custom enumerator
+	a. It must contain at least 3 fields.
+	b. Each field must use the created "custom attribute".
+
+3. Create an extension method for any enum type
+	a. It must contain a method that is going to use reflection in order to retrieve the value of the public method created inside the "custom attribute".

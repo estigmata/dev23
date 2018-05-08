@@ -1,0 +1,43 @@
+C# Reflection - Practice
+------------------------
+
+1. Create a new project solution named "College"
+
+2. Create a class named "Student"
+	The class must have:
+		1 private field
+		1 public field
+		1 private property
+		1 public property
+		1 private method with parameters and return type
+		1 public method with parameters and return type
+
+3. Create a class named "Professor"
+	The class must have:
+		Default constructor
+		Custom constructor with the name of the professor
+
+
+------
+
+a. Get executing assembly
+
+b. Get list of namespaces
+
+c. Get all types in executing assembly.
+	Constructors
+	Fields
+	Properties
+	Methods
+
+	Note: All of them must include their access modifiers and other important information that can be displayed.
+
+d. Create a new instance of "Student" using reflection
+
+	d.1 Set public field
+	d.2 Set private field
+	d.3 Set private property
+	d.4 Set public property
+	d.5 Invoke private method and print result
+	d.6 Invoke public method and print result
+	

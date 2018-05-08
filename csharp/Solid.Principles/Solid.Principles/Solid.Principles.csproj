@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{260B43C6-6EAC-4888-B157-7A667FAEF6C6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Solid.Principles</RootNamespace>
+    <AssemblyName>Solid.Principles</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DIPViolation\Button\Button.cs" />
+    <Compile Include="DIPViolation\Button\Lamp.cs" />
+    <Compile Include="DIPViolation\Encoding\EncodingModule.cs" />
+    <Compile Include="DIPViolation\Encoding\EncodingModuleClient.cs" />
+    <Compile Include="DIPViolation\Encoding\MyDatabase.cs" />
+    <Compile Include="DIP\Button\Button.cs" />
+    <Compile Include="DIP\Button\Fan.cs" />
+    <Compile Include="DIP\Button\IEquipment.cs" />
+    <Compile Include="DIP\Button\Lamp.cs" />
+    <Compile Include="DIP\Encoding\EncodingModule.cs" />
+    <Compile Include="DIP\Encoding\EncodingModuleClient.cs" />
+    <Compile Include="DIP\Encoding\IReader.cs" />
+    <Compile Include="DIP\Encoding\IWriter.cs" />
+    <Compile Include="DIP\Encoding\MyDatabase.cs" />
+    <Compile Include="DIP\Encoding\MyDatabaseWriter.cs" />
+    <Compile Include="DIP\Encoding\MyFileReader.cs" />
+    <Compile Include="DIP\Encoding\MyFileWriter.cs" />
+    <Compile Include="DIP\Encoding\MyNetworkReader.cs" />
+    <Compile Include="ISPViolation\Door\IDoor.cs" />
+    <Compile Include="ISPViolation\Door\Program.cs" />
+    <Compile Include="ISPViolation\Door\SensingDoor.cs" />
+    <Compile Include="ISPViolation\Door\Sensor.cs" />
+    <Compile Include="ISPViolation\Door\TimedDoor.cs" />
+    <Compile Include="ISPViolation\Door\Timer.cs" />
+    <Compile Include="ISPViolation\Worker\Factory.cs" />
+    <Compile Include="ISPViolation\Worker\Human.cs" />
+    <Compile Include="ISPViolation\Worker\IWorker.cs" />
+    <Compile Include="ISPViolation\Worker\MessHall.cs" />
+    <Compile Include="ISPViolation\Worker\Program.cs" />
+    <Compile Include="ISPViolation\Worker\Robot.cs" />
+    <Compile Include="ISP\Door\IDoor.cs" />
+    <Compile Include="ISP\Door\IProximity.cs" />
+    <Compile Include="ISP\Door\ITimeout.cs" />
+    <Compile Include="ISP\Door\Program.cs" />
+    <Compile Include="ISP\Door\SensingDoor.cs" />
+    <Compile Include="ISP\Door\Sensor.cs" />
+    <Compile Include="ISP\Door\TimedDoor.cs" />
+    <Compile Include="ISP\Door\Timer.cs" />
+    <Compile Include="ISP\Worker\Factory.cs" />
+    <Compile Include="ISP\Worker\Human.cs" />
+    <Compile Include="ISP\Worker\IEater.cs" />
+    <Compile Include="ISP\Worker\IWorker.cs" />
+    <Compile Include="ISP\Worker\MessHall.cs" />
+    <Compile Include="ISP\Worker\Program.cs" />
+    <Compile Include="ISP\Worker\Robot.cs" />
+    <Compile Include="LSPViolation\Resources\ApplicationSettings.cs" />
+    <Compile Include="LSPViolation\Resources\IPersistedResource.cs" />
+    <Compile Include="LSPViolation\Resources\SpecialSettings.cs" />
+    <Compile Include="LSPViolation\Resources\UserSettings.cs" />
+    <Compile Include="LSPViolation\Shapes\Rectangle.cs" />
+    <Compile Include="LSPViolation\Shapes\Square.cs" />
+    <Compile Include="LSP\Resources\ApplicationSettings.cs" />
+    <Compile Include="LSP\Resources\IPersistResource.cs" />
+    <Compile Include="LSP\Resources\ILoadResource.cs" />
+    <Compile Include="LSP\Resources\SpecialSettings.cs" />
+    <Compile Include="LSP\Resources\UserSettings.cs" />
+    <Compile Include="LSP\Shapes\Rectangle.cs" />
+    <Compile Include="LSP\Shapes\Square.cs" />
+    <Compile Include="OCPViolation\Graphic\GraphicEditor.cs" />
+    <Compile Include="OCPViolation\Practice\ResourceAllocator.cs" />
+    <Compile Include="OCPViolation\Practice\ResourceType.cs" />
+    <Compile Include="OCP\Graphic\GraphicEditor.cs" />
+    <Compile Include="OCP\Practice\IResource.cs" />
+    <Compile Include="OCP\Practice\ResourceAllocator.cs" />
+    <Compile Include="OCP\Practice\SpaceResource.cs" />
+    <Compile Include="OCP\Practice\TimeResource.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SRPViolation\Book\Book.cs" />
+    <Compile Include="SRPViolation\Person\Person.cs" />
+    <Compile Include="SRP\Book\Book.cs" />
+    <Compile Include="SRP\Book\HtmlPrinter.cs" />
+    <Compile Include="SRP\Book\PlainTextPrinter.cs" />
+    <Compile Include="SRP\Book\IPrinter.cs" />
+    <Compile Include="SRP\Person\Person.cs" />
+    <Compile Include="SRP\Person\PersonFormatter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DIPViolation\Encoding\beforeEncryption.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DIP\Encoding\beforeEncryption.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
