@@ -1,0 +1,84 @@
+Pomodoro
+--------
+
+Escribir una aplicación que permita a un usuario utilizar la "Técnica Pomodoro" a traves de linea de comando:
+
+Resultado esperado:
+-------------------
+* Entrega de la práctica: Jueves 29 a horas 18:30 debe ser enviado por email a mi correo de la fundación (cualquier retraso en la entrega será penalizado con menos puntaje).
+
+* Se debe entregar un ejecutable que me permita usar comandos (y obviamente el código también)
+
+* Los siguientes comandos deben ser soportados:
+
+	register
+		descripción: Registra un usuario para que sea capaz de usar el sistema pomodoro.
+		ejemplo:
+			register username1
+			register username2
+			...
+			register usernameN
+		detalles:
+			Se pueden registrar N usuarios en el sistema.
+			No se puede registrar un usuario dos veces.
+			Una vez registrado un usuario se debe imprimir en consola que se ha realizado el registro para dicho usuario.		
+	start
+		descripción: Inicia la ejecución de pomodoro para un usuario específico.
+		ejemplo:
+			start username1
+		detalles:
+			Se puede iniciar la ejecución de pomodoro para todos los usuarios (pero solo uno a la vez a traves del comando que se puso de ejemplo).
+			Cuando se inicia la ejecución se debe imprimir en consola la "configuración" de pomodoro para ese usuario y se debe indicar que se ha iniciado.
+				Por defecto la configuración es:
+					25 segundos para la tarea en curso (pomodoro).
+					5 segundos para el descanso (break corto).
+					15 segundos para el descanso despues de 4 pomodoros de 25 segundos (break largo).
+			La ejecución por defecto consta de 4 pomodoros (de 25 segundos) luego de eso se "para" la ejecución automaticamente y se debe mostrar un resumen de los pomodoros ejecutados para ese usuario.
+
+	stop
+		descripción: Para la ejecución de pomodoro para un usuario específico.
+		ejemplo:
+			stop username1
+			stop username3
+		detalles:
+			No se puede parar una ejecución que nunca haya empezado.
+			Una vez que se para una ejecución se debe mostrar un resumen de cuantos pomodoros (de 25 segundos) se ejecutaron para ese usuario.
+
+	unregister
+		descripción: Desregistra un usuario, el cual ya no podrá iniciar el sistema.
+		ejemplo:
+			unregister username1
+			unregister username2
+		detalles:
+			No se puede desregistrar un usuario que no existe (debe haber validación aqui)		.
+			No se puede desregistrar un usuario el cual está actualmente ejecutando pomodoro (por ejemplo si se ha dado "start" previamente y se encuentra en ejecución).
+
+	config
+		descripción: Permite configurar pomodoro para un usuario específico
+		ejemplo:
+			config username1 25|5|15|1
+			donde 25 es igual a los segundos que tiene un "pomodoro"
+			donde 5 es igual a los segundos que tiene un "break corto"
+			donde 15 es igual a los segundos que tiene un "break largo" luego de 1 "pomodoro set"
+			donde 1 es la cantidad de "pomodoros set" que se ejecutan
+
+			config username1 20|2|8|2
+			config username1 15|2|5|3
+		detalles:
+			Este comando puede no ser utilizado por un usuario lo cual implicaría que al momento de usar el comando "start" se usa una configuración por defecto que es la explicada en los detalles del comando start.
+
+Tips de agilización:
+--------------------
+Empezar con los comandos "register" y "unregister".
+Continuar con el comando "start".
+	Usar hilos.
+Continuar con el comando "stop".
+Continuar con el comando "config".
+
+Se calificará:
+--------------
+C# Language usage
+OOP
+Object Oriented Design
+Validations
+Clean code

@@ -1,0 +1,9 @@
+Para el martes
+
+1, Single Alarm (Given a datetime publishes an event only once).
+2, Minute Alarm (Publishs an event every one minute).
+3, Custom Alarm (Given a datetime publishes an event N times after M seconds).
+4, An AlarmService class is in charge to handle or create the alarms.
+5, A person can be subscribed to the different alarms by accessing them across the AlarmService class.
+6, The person that receives an event should print his name, the alarm name and the time of execution.
+	a) For Minute and Custom alarms should print when is the next execution (received from EventArgs e).
